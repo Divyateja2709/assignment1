@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SmartDoc AI: Upload and interact with your documents using AI-powered Q&A." />
+    <meta name="theme-color" content="#4CAF50" />
+    <title>SmartDoc AI</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Inter', sans-serif;
+        background-color: #E8F5E9;
+        color: #111827;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #root {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 700px;
+        padding: 40px 20px;
+        background-color: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .input-container {
+        display: flex;
+        width: 100%;
+        gap: 12px;
+        margin-bottom: 20px;
+      }
+
+      .search-bar {
+        flex: 1;
+        padding: 14px 16px;
+        border: 2px solid #10B981;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        font-size: 16px;
+      }
+
+      .search-bar:focus {
+        outline: none;
+        border-color: #4CAF50;
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+      }
+
+      .button {
+        padding: 14px 24px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: #45a049;
+      }
+
+      .center-text {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 24px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="input-container">
+        <input type="text" class="search-bar" placeholder="Search documents or ask a question..." />
+        <button class="button">Submit</button>
+      </div>
+      <p class="center-text">SmartDoc AI - Powered by AI for smarter document interaction.</p>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
